@@ -18,9 +18,9 @@ class ApiTests(unittest.TestCase):
                     "name" : "Israel",
                     "alpha2_code" : "IL",
                     "alpha3_code" : "ISR",
-                    "name" : "United Arab Emirates",
-                    "alpha2_code" : "AE",
-                    "alpha3_code" : "ARE",
+                    "name1" : "United Arab Emirates",
+                    "alpha2_code1" : "AE",
+                    "alpha3_code2" : "ARE",
                     }
 
         for value in country_list:
@@ -29,11 +29,15 @@ class ApiTests(unittest.TestCase):
         print 'response json test OK'
 
 
-
-
         d = {'x': 1, 'y': 2, 'z': 3}
         for key, value in d.iteritems():
             print key, value
+
+        d = {'x': 1, 'y': 2, 'z': 3}
+        for key, value in iter(d.items()):
+            print key, value
+
+
 
 
 
